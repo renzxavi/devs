@@ -6,7 +6,7 @@ form.addEventListener('submit', async function(e) {
     e.preventDefault();
 
     // 2. Muestra un mensaje temporal mientras se envía
-    formMessage.textContent = 'Enviando...';
+    formMessage.textContent = 'Sending...';
     formMessage.classList.remove('success', 'error');
     formMessage.style.opacity = '1';
 
@@ -24,17 +24,17 @@ form.addEventListener('submit', async function(e) {
         });
 
         if (response.ok) {
-            formMessage.textContent = '¡Mensaje enviado con éxito!';
+            formMessage.textContent = 'Message sent successfully!';
             formMessage.classList.add('success');
             form.reset(); // Limpia los campos del formulario
         } else {
-            formMessage.textContent = '¡Ups! Hubo un problema al enviar el mensaje.';
+            formMessage.textContent = 'Oops! There was a problem sending the message.';
             formMessage.classList.add('error');
         }
     } catch (error) {
-        formMessage.textContent = 'Error de red. Por favor, inténtalo de nuevo.';
+        formMessage.textContent = 'Network error. Please try again.';
         formMessage.classList.add('error');
-        console.error('Error al enviar el formulario:', error);
+        console.error('Error submitting form:', error);
     }
 
     // 5. Oculta el mensaje después de unos segundos
