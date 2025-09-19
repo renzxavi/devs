@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renzo Xavier</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome para íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+  <header class="header">
+    <nav class="nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content" id="home">
+    <h1>Welcome...</h1>
+    <p>I am Renzo Xavier, a psychologist graduated from the University of the Republic with a cognitive-behavioral orientation. This background has given me a broad perspective on artificial intelligence, user experience, data analysis, and machine learning.</p>
+
+    <p>In addition, I am a programming analyst with experience in several programming languages such as HTML, CSS, JavaScript, PHP, SQL Server, and MySQL, as well as modern frameworks like Ionic and React. I also have expertise in software design and in implementing team collaboration strategies, both in remote environments —using Git— and through agile methodologies such as Scrum.</p>
+
+    <p>I am passionate about web development, both frontend and backend. I enjoy tackling challenges, solving complex problems, and working on projects that aim to make an impact. Beyond programming, I teach computer science, explore new technologies, and contribute to developer communities. Recently, I have been delving into data science and machine learning, fields that greatly excite me for their potential.</p>
+
+    <p>Currently, I am pursuing a Diploma in Data Business Analytics and participating in the Jóvenes a Programar program. My English level is A2–B1, and I am highly motivated and enthusiastic about learning.</p>
+  </main>
+
+  <hr>
+
+  <section class="section" id="projects">
+    <h2>Projects</h2>
+    <div class="project-container">
+      <div class="project-card">
+        <img src="/assets/assessmas.jpg" alt="Assessmas Project Image">
+        <div class="card-content">
+          <h3>Assessmas</h3>
+          <p>Client-server project focused on data analysis, featuring a robust backend that integrates machine learning techniques for processing and generating insights.</p>
+          <a href="https://assessmas.com" class="btn" target="_blank">View</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <hr>
+
+  <section class="section contact" id="contact">
+    <h2>Contact</h2>
+    <form id="contactForm" action="https://formspree.io/f/xdklppdk" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      
+      <button type="submit" class="btn">Send</button>
+    </form>
+    <div id="form-message" class="form-message"></div>
+  </section>
+
+  <!-- Footer con redes -->
+  <footer class="footer">
+    <p>&copy; 2025 Renzo Xavier</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/tuusuario" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://www.instagram.com/tuusuario" target="_blank" aria-label="Instagram">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
